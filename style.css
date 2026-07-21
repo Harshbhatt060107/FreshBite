@@ -5,6 +5,8 @@
     font-family:Arial, sans-serif;
 }
 
+/* Navbar */
+
 nav{
     background:#ff5722;
     color:white;
@@ -33,6 +35,8 @@ nav ul li a{
     font-size:18px;
 }
 
+/* Hero Section */
+
 .hero{
     text-align:center;
     padding:120px 20px;
@@ -49,14 +53,19 @@ nav ul li a{
     margin-bottom:30px;
 }
 
-.btn{
+.btn,
+.hero button{
     background:#ff5722;
     color:white;
     text-decoration:none;
     padding:15px 30px;
+    border:none;
     border-radius:10px;
     font-size:20px;
+    cursor:pointer;
 }
+
+/* Popular Foods */
 
 .foods{
     padding:60px;
@@ -83,6 +92,54 @@ nav ul li a{
     font-size:25px;
     box-shadow:0px 0px 10px gray;
 }
+
+/* Restaurants */
+
+.restaurants{
+    padding:60px;
+    text-align:center;
+}
+
+.restaurants h2{
+    margin-bottom:40px;
+    font-size:35px;
+}
+
+.restaurant-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.restaurant-card{
+    width:250px;
+    background:#f2f2f2;
+    padding:30px;
+    border-radius:15px;
+    font-size:22px;
+    text-align:center;
+    box-shadow:0px 0px 10px gray;
+}
+
+/* Offers */
+
+.offers{
+    text-align:center;
+    padding:60px;
+}
+
+.offers h2{
+    margin-bottom:25px;
+    font-size:35px;
+}
+
+.offers p{
+    margin:15px 0;
+    font-size:22px;
+}
+
+/* Footer */
 
 footer{
     background:black;
