@@ -166,13 +166,6 @@ footer{
     margin-top:50px;
 }
 
-/* Transition Effects */
-
-.food-box,
-.restaurant-card{
-    transition:0.3s;
-}
-
 /* Hover Effects */
 
 .food-box:hover,
@@ -181,8 +174,17 @@ footer{
     cursor:pointer;
 }
 
-/* Button Hover */
+.food-box button{
+    margin-top:15px;
+    padding:10px 20px;
+    background:#ff5722;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+}
 
-.hero button:hover{
+.food-box button:hover{
     background:#e64a19;
 }

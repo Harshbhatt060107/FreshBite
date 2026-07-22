@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FreshBite Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h1>FreshBite</h1>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="restaurants.html">Restaurants</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <section class="foods">
+
+        <h2>Our Menu</h2>
+
+        <div class="food-container">
+
+            <div class="food-box">
+                🍕
+                <h3>Pizza</h3>
+                <p>₹299</p>
+                <button onclick="addToCart('Pizza',299)">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                🍔
+                <h3>Burger</h3>
+                <p>₹149</p>
+                <button onclick="addToCart('Burger',149)">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                🍗
+                <h3>Biryani</h3>
+                <p>₹249</p>
+                <button onclick="addToCart('Biryani',249)">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                🍜
+                <h3>Noodles</h3>
+                <p>₹199</p>
+                <button onclick="addToCart('Noodles',199)">
+                    Add To Cart
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
