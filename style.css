@@ -13,7 +13,8 @@ nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 50px;
+    padding:20px 60px;
+    box-shadow:0px 2px 10px gray;
 }
 
 nav h1{
@@ -33,14 +34,23 @@ nav ul li a{
     color:white;
     text-decoration:none;
     font-size:18px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ffe0b2;
 }
 
 /* Hero Section */
 
 .hero{
     text-align:center;
-    padding:120px 20px;
-    background:#ffe0b2;
+    padding:150px 20px;
+    background:linear-gradient(
+        to right,
+        #fff3e0,
+        #ffe0b2
+    );
 }
 
 .hero h2{
@@ -53,16 +63,21 @@ nav ul li a{
     margin-bottom:30px;
 }
 
-.btn,
-.hero button{
+/* Button */
+
+.btn{
     background:#ff5722;
     color:white;
     text-decoration:none;
     padding:15px 30px;
-    border:none;
     border-radius:10px;
     font-size:20px;
-    cursor:pointer;
+    display:inline-block;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#e64a19;
 }
 
 /* Popular Foods */
@@ -88,9 +103,10 @@ nav ul li a{
     background:#f2f2f2;
     padding:40px;
     width:220px;
-    border-radius:15px;
+    border-radius:20px;
     font-size:25px;
-    box-shadow:0px 0px 10px gray;
+    box-shadow:0px 5px 15px gray;
+    transition:0.3s;
 }
 
 /* Restaurants */
@@ -116,10 +132,11 @@ nav ul li a{
     width:250px;
     background:#f2f2f2;
     padding:30px;
-    border-radius:15px;
+    border-radius:20px;
     font-size:22px;
     text-align:center;
-    box-shadow:0px 0px 10px gray;
+    box-shadow:0px 5px 15px gray;
+    transition:0.3s;
 }
 
 /* Offers */
@@ -147,4 +164,25 @@ footer{
     text-align:center;
     padding:25px;
     margin-top:50px;
+}
+
+/* Transition Effects */
+
+.food-box,
+.restaurant-card{
+    transition:0.3s;
+}
+
+/* Hover Effects */
+
+.food-box:hover,
+.restaurant-card:hover{
+    transform:scale(1.05);
+    cursor:pointer;
+}
+
+/* Button Hover */
+
+.hero button:hover{
+    background:#e64a19;
 }
