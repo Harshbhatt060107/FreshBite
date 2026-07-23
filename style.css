@@ -188,3 +188,71 @@ footer{
 .food-box button:hover{
     background:#e64a19;
 }
+
+/* Responsive Design */
+
+.menu-toggle{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width:768px){
+
+    nav{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    nav h1{
+        margin-bottom:15px;
+    }
+
+    .menu-toggle{
+        display: block;
+    }
+
+    nav ul{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul.active{
+        display: flex;
+    }
+
+    nav ul li{
+        margin:10px 0;
+    }
+
+    .hero{
+        padding:80px 20px;
+    }
+
+    .hero h2{
+        font-size:32px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .food-container,
+    .restaurant-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .food-box,
+    .restaurant-card{
+        width:90%;
+    }
+
+    .foods,
+    .restaurants,
+    .offers{
+        padding:30px 20px;
+    }
+}

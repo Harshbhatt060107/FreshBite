@@ -49,3 +49,7 @@ function displayCart(){
 }
 
 displayCart();
+
+function toggleMenu() {
+    document.querySelector("nav ul").classList.toggle("active");
+}
