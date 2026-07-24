@@ -19,8 +19,13 @@
     <li><a href="cart.html">Cart</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="contact.html">Contact</a></li>
-    <li><a href="login.html">Login</a></li>
-    <li><a href="account.html">Account</a></li>
+    <li id="loginLink">
+    <a href="login.html">Login</a>
+    </li>
+
+    <li id="accountLink" style="display:none;">
+    <a href="account.html">Account</a>
+    </li>
         </ul>
     </nav>
 </header>
@@ -66,6 +71,15 @@
 </footer>
 
 <script>
+
+// Check if cart is empty
+const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+if (cart.length === 0) {
+    alert("Your cart is empty!");
+    window.location.href = "menu.html";
+}
+
 document.getElementById("checkoutForm").addEventListener("submit", function(e){
 
     e.preventDefault();
@@ -74,10 +88,23 @@ document.getElementById("checkoutForm").addEventListener("submit", function(e){
 
     localStorage.removeItem("cart");
 
-    window.location.href="tracking.html";
+    window.location.href = "tracking.html";
 
 });
+
 </script>
 
+<script>
+const loginLink = document.getElementById("loginLink");
+const accountLink = document.getElementById("accountLink");
+
+if (localStorage.getItem("loggedIn") === "true") {
+    loginLink.style.display = "none";
+    accountLink.style.display = "inline-block";
+} else {
+    loginLink.style.display = "inline-block";
+    accountLink.style.display = "none";
+}
+</script>
 </body>
 </html>

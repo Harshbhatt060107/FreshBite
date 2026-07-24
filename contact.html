@@ -18,9 +18,12 @@
     <li><a href="menu.html">Menu</a></li>
     <li><a href="cart.html">Cart</a></li>
     <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="account.html">Account</a></li>
-</ul>
+    <li><a href="contact.html" class = "active">Contact</a></li>
+    <li id="loginLink"><a href="login.html">Login</a></li>
+
+<li id="accountLink" style="display:none;">
+    <a href="account.html">Account</a>
+</li></ul>
 </nav>
 </header>
 
@@ -70,6 +73,24 @@
 <footer>
 <p>© 2026 FreshBite. All Rights Reserved.</p>
 </footer>
+<script>
+const loginLink = document.getElementById("loginLink");
+const accountLink = document.getElementById("accountLink");
 
+if (localStorage.getItem("loggedIn") === "true") {
+    loginLink.style.display = "none";
+    accountLink.style.display = "inline-block";
+} else {
+    loginLink.style.display = "inline-block";
+    accountLink.style.display = "none";
+}
+</script>
+<script>
+document.querySelector("form").addEventListener("submit", function(e){
+    e.preventDefault();
+    alert("Message sent successfully!");
+    this.reset();
+});
+</script>
 </body>
 </html>

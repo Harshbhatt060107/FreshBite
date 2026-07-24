@@ -8,9 +8,29 @@
 </head>
 <body>
 
+<header>
 <nav>
-    <h2>FreshBite</h2>
+    <h1>FreshBite</h1>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="restaurants.html">Restaurants</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+        <li id="loginLink">
+            <a href="login.html">Login</a>
+        </li>
+
+        <li id="accountLink" style="display:none;">
+            <a href="account.html" class="active">Account</a>
+        </li>
+    </ul>
+
 </nav>
+</header>
 
 <div class="container">
 
@@ -19,9 +39,9 @@
     <hr>
 
     <h2>Profile</h2>
-    <p><strong>Name:</strong> Rahul</p>
-    <p><strong>Email:</strong> rahul7998@gmail.com</p>
-    <p><strong>Phone:</strong> 9784683210</p>
+    <p><strong>Name:</strong> Demo User</p>
+    <p><strong>Email:</strong> demo@freshbite.com</p>
+    <p><strong>Phone:</strong> 9876543210</p>
 
     <hr>
 
@@ -47,6 +67,16 @@
     </ul>
 
 </div>
+<footer>
+    <p>&copy; 2026 FreshBite. All Rights Reserved.</p>
+</footer>
+<script src="script.js"></script>
 
+<script>
+if(localStorage.getItem("loggedIn")==="true"){
+    document.getElementById("loginLink").style.display="none";
+    document.getElementById("accountLink").style.display="inline-block";
+}
+</script>
 </body>
 </html>

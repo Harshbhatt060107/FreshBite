@@ -13,7 +13,7 @@
 <body>
 
     <!-- Navigation -->
-
+<header>
     <nav class="navbar">
 
         <h1 class="logo">FreshBite</h1>
@@ -21,14 +21,21 @@
         <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="restaurants.html">Restaurants</a></li>
-    <li><a href="menu.html">Menu</a></li>
+    <li><a href="menu.html" class = "active">Menu</a></li>
     <li><a href="cart.html">Cart</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="contact.html">Contact</a></li>
-    <li><a href="account.html">Account</a></li>
+    <li id="loginLink">
+    <a href="login.html">Login</a>
+    </li>
+
+    <li id="accountLink" style="display:none;">
+    <a href="account.html">Account</a>
+    </li>
         </ul>
 
     </nav>
+</header>
 
     <!-- Hero -->
 
@@ -207,7 +214,21 @@
     </button>
 
 </div>
+</div>
+</section>
 
 <script src="script.js"></script>
+<script>
+const loginLink = document.getElementById("loginLink");
+const accountLink = document.getElementById("accountLink");
+
+if (localStorage.getItem("loggedIn") === "true") {
+    loginLink.style.display = "none";
+    accountLink.style.display = "inline-block";
+} else {
+    loginLink.style.display = "inline-block";
+    accountLink.style.display = "none";
+}
+</script>
 </body>
 </html>

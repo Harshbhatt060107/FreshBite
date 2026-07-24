@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Cart</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<header>
 <nav>
     <h1>FreshBite</h1>
 
@@ -13,12 +17,19 @@
     <li><a href="index.html">Home</a></li>
     <li><a href="restaurants.html">Restaurants</a></li>
     <li><a href="menu.html">Menu</a></li>
-    <li><a href="cart.html">Cart</a></li>
+    <li><a href="cart.html" class = "active">Cart</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="contact.html">Contact</a></li>
-    <li><a href="account.html">Account</a></li>
+    <li id="loginLink">
+    <a href="login.html">Login</a>
+    </li>
+
+    <li id="accountLink" style="display:none;">
+    <a href="account.html">Account</a>
+    </li>
     </ul>
 </nav>
+</header>
 
 <section class="foods">
 
@@ -35,6 +46,18 @@
 </section>
 
 <script src="script.js"></script>
+<script>
+const loginLink = document.getElementById("loginLink");
+const accountLink = document.getElementById("accountLink");
+
+if (localStorage.getItem("loggedIn") === "true") {
+    loginLink.style.display = "none";
+    accountLink.style.display = "inline-block";
+} else {
+    loginLink.style.display = "inline-block";
+    accountLink.style.display = "none";
+}
+</script>
 
 </body>
 </html>

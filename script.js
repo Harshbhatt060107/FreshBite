@@ -148,3 +148,23 @@ function removeItem(name){
 
     location.reload();
 }
+
+// Login / Account Navbar
+window.addEventListener("DOMContentLoaded", function () {
+
+    const loginLink = document.getElementById("loginLink");
+    const accountLink = document.getElementById("accountLink");
+
+    if (!loginLink || !accountLink) return;
+
+    if (localStorage.getItem("loggedIn") === "true") {
+        loginLink.style.display = "none";
+        accountLink.style.display = "inline-block";
+    } else {
+        loginLink.style.display = "inline-block";
+        accountLink.style.display = "none";
+    }
+
+});
+
+console.log("FreshBite script loaded");

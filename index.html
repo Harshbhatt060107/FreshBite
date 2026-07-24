@@ -18,7 +18,7 @@
             </div>
             
         <ul>
-    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html" class = "active">Home</a></li>
     <li><a href="restaurants.html">Restaurants</a></li>
     <li><a href="menu.html">Menu</a></li>
     <li><a href="cart.html">Cart</a></li>
@@ -119,11 +119,16 @@
  
 <script src="script.js"></script>
 <script>
-if(localStorage.getItem("loggedIn") === "true"){
-    document.getElementById("loginLink").style.display = "none";
-    document.getElementById("accountLink").style.display = "inline-block";
+const loginLink = document.getElementById("loginLink");
+const accountLink = document.getElementById("accountLink");
+
+if (localStorage.getItem("loggedIn") === "true") {
+    loginLink.style.display = "none";
+    accountLink.style.display = "inline-block";
+} else {
+    loginLink.style.display = "inline-block";
+    accountLink.style.display = "none";
 }
 </script>
-
 </body>
 </html>

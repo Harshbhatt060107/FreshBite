@@ -823,3 +823,33 @@ hr{
     color:#444;
     margin-bottom:20px;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Restaurant Cards */
+.restaurant-card:hover{
+    transform: translateY(-8px);
+    transition: 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Food Cards */
+.food-card:hover{
+    transform: translateY(-8px);
+    transition: 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Buttons */
+button:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+.active{
+    color: yellow !important;
+    font-weight:bold;
+    border-bottom:2px solid white;
+    padding-bottom:5px;
+}
