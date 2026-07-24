@@ -24,7 +24,9 @@
     <li><a href="cart.html">Cart</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="contact.html">Contact</a></li>
-    <li><a href="login.html">Login</a></li>
+    <li id="loginLink"><a href="login.html">Login</a></li>
+    <li id="accountLink" style="display:none;">
+    <a href="account.html">Account</a></li>
         </ul>
 
         </nav>
@@ -116,6 +118,12 @@
     </footer>
  
 <script src="script.js"></script>
+<script>
+if(localStorage.getItem("loggedIn") === "true"){
+    document.getElementById("loginLink").style.display = "none";
+    document.getElementById("accountLink").style.display = "inline-block";
+}
+</script>
 
 </body>
 </html>

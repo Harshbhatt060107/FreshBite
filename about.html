@@ -1,51 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About | FreshBite</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - FreshBite</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
 <header>
-<nav>
-<h1>FreshBite</h1>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="restaurants.html">Restaurants</a></li>
-<li><a href="menu.html">Menu</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
+
+    <nav>
+        <h1>FreshBite</h1>
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="restaurants.html">Restaurants</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+            <li id="loginLink">
+                <a href="login.html">Login</a>
+            </li>
+
+            <li id="accountLink" style="display:none;">
+                <a href="account.html">Account</a>
+            </li>
+
+        </ul>
+    </nav>
+
 </header>
 
-<section class="hero">
-<h2>About FreshBite</h2>
-<p>Your favourite online food ordering platform.</p>
-</section>
+<div class="about-container">
 
-<section class="foods">
-<div class="food-box">
-<h2>Who We Are</h2>
+    <h1>About FreshBite</h1>
 
-<p>
-FreshBite is a food ordering website that connects customers with their favourite restaurants.
-Our goal is to provide fast, reliable and convenient food delivery with a simple and user-friendly experience.
-</p>
+    <p class="about-text">
+        FreshBite is an online food ordering platform that delivers
+        delicious, fresh and hygienic food from the best restaurants
+        directly to your doorstep. Our goal is to provide fast delivery,
+        excellent service and a smooth ordering experience.
+    </p>
 
-<h2>Our Mission</h2>
+    <hr>
 
-<p>
-To deliver delicious meals quickly while ensuring quality, customer satisfaction and a smooth ordering process.
-</p>
+    <section>
+
+        <h2>📖 Our Story</h2>
+
+        <p>
+            FreshBite was created with a simple mission — to make food
+            ordering quick, convenient and enjoyable. We connect customers
+            with trusted restaurants while ensuring every order reaches
+            safely and on time.
+        </p>
+
+    </section>
+
+    <hr>
+
+    <section>
+
+        <h2>👨‍🍳 Our Team</h2>
+
+        <div class="team-card">
+            <h3>Devansh Bhatt</h3>
+            <p>Founder & Developer</p>
+        </div>
+
+        <div class="team-card">
+            <h3>Rahul Sharma</h3>
+            <p>Head Chef</p>
+        </div>
+
+        <div class="team-card">
+            <h3>Amit Verma</h3>
+            <p>Delivery Manager</p>
+        </div>
+
+    </section>
+
+    <hr>
+
+    <section>
+
+        <h2>🏆 Our Awards</h2>
+
+        <ul class="award-list">
+            <li>🏆 Best Food Delivery Platform 2025</li>
+            <li>⭐ Trusted by 10,000+ Happy Customers</li>
+            <li>🍽 Excellence in Food Service Award</li>
+        </ul>
+
+    </section>
+
 </div>
-</section>
 
 <footer>
-<p>© 2026 FreshBite. All Rights Reserved.</p>
+
+    <p>&copy; 2026 FreshBite. All Rights Reserved.</p>
+
 </footer>
+
+<script src="script.js"></script>
+
+<script>
+
+if(localStorage.getItem("loggedIn")==="true"){
+
+document.getElementById("loginLink").style.display="none";
+
+document.getElementById("accountLink").style.display="inline-block";
+
+}
+
+</script>
 
 </body>
 </html>

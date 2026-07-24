@@ -174,19 +174,22 @@ footer{
     cursor:pointer;
 }
 
-.food-box button{
-    margin:15px;
+.add-cart-btn{
+    display:block;
+    width:80%;
+    margin:20px auto;
     padding:12px;
-    width:calc(100% - 30px);
     background:#ff6b35;
     color:white;
     border:none;
     border-radius:8px;
     font-size:16px;
+    font-weight:bold;
     cursor:pointer;
+    transition:0.3s;
 }
 
-.food-box button:hover{
+.add-cart-btn:hover{
     background:#e64a19;
 }
 
@@ -508,18 +511,6 @@ html{
     text-align: center;
 }
 
-/* Small quantity buttons */
-.food-box button {
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 5px;
-    margin: 0 5px;
-    cursor: pointer;
-}
-
 input,
 textarea,
 select{
@@ -534,4 +525,301 @@ select{
 
 textarea{
     resize:none;
+}
+
+/* ===== Order Tracking ===== */
+
+.tracking-list{
+    list-style:none;
+    padding:0;
+    margin:20px 0;
+}
+
+.tracking-list li{
+    background:#f8f8f8;
+    padding:15px;
+    margin:12px 0;
+    border-left:6px solid #ccc;
+    border-radius:8px;
+    font-size:18px;
+}
+
+.tracking-list li.completed{
+    border-left:6px solid #28a745;
+    background:#eafaf1;
+}
+
+.progress{
+    width:100%;
+    height:12px;
+    background:#ddd;
+    border-radius:20px;
+    overflow:hidden;
+    margin:20px 0;
+}
+
+.progress-fill{
+    width:50%;
+    height:100%;
+    background:#ff6b35;
+}
+
+.form-container h3{
+    margin-top:20px;
+}
+
+/* Cart + and - buttons */
+
+.quantity-controls button{
+    width:35px;
+    height:35px;
+    padding:0;
+    margin:0 5px;
+    font-size:20px;
+    font-weight:bold;
+    border:none;
+    border-radius:6px;
+    background:#ff6b35;
+    color:white;
+    cursor:pointer;
+}
+
+#cart-items button:hover{
+    background:#e64a19;
+}
+
+/* Cart Layout */
+
+.cart-item{
+    padding:20px;
+    text-align:center;
+}
+
+.quantity-controls{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    margin:15px 0;
+}
+
+.quantity-controls button{
+    width:35px;
+    height:35px;
+    border:none;
+    border-radius:6px;
+    background:#ff6b35;
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.quantity-controls span{
+    font-size:20px;
+    font-weight:bold;
+    min-width:30px;
+    text-align:center;
+}
+
+.remove-btn{
+    margin-top:15px;
+    padding:10px 20px;
+    background:#dc3545;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:bold;
+}
+
+.remove-btn:hover{
+    background:#b02a37;
+}
+
+/* Account Page */
+
+.container{
+    max-width:900px;
+    margin:40px auto;
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.container h1{
+    color:#ff6b35;
+    font-size:40px;
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.container h2{
+    color:#2d1b12;
+    margin-top:25px;
+    margin-bottom:10px;
+    border-left:5px solid #ff6b35;
+    padding-left:10px;
+}
+
+.container p{
+    font-size:18px;
+    margin:8px 0;
+    color:#444;
+}
+
+.container ul{
+    list-style:none;
+    padding-left:0;
+}
+
+.container ul li{
+    background:#fff8f0;
+    margin:10px 0;
+    padding:12px 15px;
+    border-radius:8px;
+    border-left:5px solid #ff6b35;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.container ul li:hover{
+    background:#ffe6d5;
+    transform:translateX(5px);
+}
+
+hr{
+    margin:25px 0;
+    border:none;
+    border-top:2px solid #eee;
+}
+
+nav{
+    background:#ff6b35;
+    padding:18px 50px;
+}
+
+nav h2{
+    color:white;
+    margin:0;
+    font-size:32px;
+}
+
+body{
+    background:#fff8f0;
+    font-family:Arial, sans-serif;
+}
+
+@media(max-width:768px){
+
+.container{
+    width:90%;
+    padding:20px;
+}
+
+.container h1{
+    font-size:30px;
+}
+
+.container h2{
+    font-size:24px;
+}
+
+.container p,
+.container li{
+    font-size:16px;
+}
+
+nav{
+    padding:15px 20px;
+}
+
+nav h2{
+    font-size:28px;
+}
+
+}
+
+.about-container{
+    max-width:900px;
+    margin:40px auto;
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.about-container h1{
+    text-align:center;
+    color:#ff5722;
+    margin-bottom:20px;
+}
+
+.about-text{
+    text-align:center;
+    line-height:1.8;
+    color:#555;
+}
+
+.about-container h2{
+    color:#333;
+    margin:25px 0 15px;
+}
+
+.team-card{
+    background:#fff5f2;
+    padding:15px;
+    margin:15px 0;
+    border-left:5px solid #ff5722;
+    border-radius:8px;
+}
+
+.team-card h3{
+    color:#ff5722;
+}
+
+.team-card p{
+    color:#555;
+}
+
+.award-list{
+    list-style:none;
+    padding:0;
+}
+
+.award-list li{
+    background:#fff5f2;
+    margin:12px 0;
+    padding:15px;
+    border-left:5px solid #ff5722;
+    border-radius:8px;
+}
+
+hr{
+    margin:30px 0;
+    border:1px solid #eee;
+}
+
+.contact-info{
+    max-width:700px;
+    margin:40px auto;
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-info h2{
+    color:#ff5722;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.contact-info p{
+    font-size:18px;
+    line-height:1.8;
+    color:#444;
+    margin-bottom:20px;
 }

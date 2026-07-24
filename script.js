@@ -42,19 +42,29 @@ function displayCart(){
 
         total += item.price*item.quantity;
 
-        cartDiv.innerHTML += `
-           <div class="food-box">
+       cartDiv.innerHTML += `
+<div class="food-box cart-item">
+
     <h3>${item.name}</h3>
 
-    <button onclick="decreaseQuantity('${item.name}')">-</button>
+    <div class="quantity-controls">
+        <button onclick="decreaseQuantity('${item.name}')">-</button>
 
-    <span> ${item.quantity} </span>
+        <span>${item.quantity}</span>
 
-    <button onclick="increaseQuantity('${item.name}')">+</button>
+        <button onclick="increaseQuantity('${item.name}')">+</button>
+    </div>
 
-    <p>₹${item.price * item.quantity}</p>
+ <p>Price: ₹${item.price} × ${item.quantity} = ₹${item.price * item.quantity}</p>
+
+<div class="remove-container">
+    <button class="remove-btn" onclick="removeItem('${item.name}')">
+        Remove
+    </button>
 </div>
-        `;
+
+</div>
+`;
     });
 
     cartDiv.innerHTML += `
@@ -114,12 +124,27 @@ if (loginForm) {
         }
 
         alert("Login Successful!");
+
+        localStorage.setItem("loggedIn", "true");
+
         window.location.href = "index.html";
     });
 
 }
 
+
 function clearCart() {
     localStorage.removeItem("cart");
     displayCart();
+}
+
+function removeItem(name){
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    cart = cart.filter(item => item.name !== name);
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    location.reload();
 }
