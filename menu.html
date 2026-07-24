@@ -1,70 +1,201 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>FreshBite Menu</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <nav>
-        <h1>FreshBite</h1>
+    <!-- Navigation -->
 
-        <ul>
+    <nav class="navbar">
+
+        <h1 class="logo">FreshBite</h1>
+
+        <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="restaurants.html">Restaurants</a></li>
-            <li><a href="menu.html">Menu</a></li>
+            <li><a href="menu.html" class="active">Menu</a></li>
             <li><a href="cart.html">Cart</a></li>
             <li><a href="login.html">Login</a></li>
         </ul>
+
     </nav>
 
-    <section class="foods">
+    <!-- Hero -->
 
-        <h2>Our Menu</h2>
+    <section class="menu-hero">
 
-        <div class="food-container">
+        <h1>Explore Our Delicious Menu</h1>
 
-            <div class="food-box">
-                🍕
-                <h3>Pizza</h3>
-                <p>₹299</p>
-                <button onclick="addToCart('Pizza',299)">
-                    Add To Cart
-                </button>
-            </div>
-
-            <div class="food-box">
-                🍔
-                <h3>Burger</h3>
-                <p>₹149</p>
-                <button onclick="addToCart('Burger',149)">
-                    Add To Cart
-                </button>
-            </div>
-
-            <div class="food-box">
-                🍗
-                <h3>Biryani</h3>
-                <p>₹249</p>
-                <button onclick="addToCart('Biryani',249)">
-                    Add To Cart
-                </button>
-            </div>
-
-            <div class="food-box">
-                🍜
-                <h3>Noodles</h3>
-                <p>₹199</p>
-                <button onclick="addToCart('Noodles',199)">
-                    Add To Cart
-                </button>
-            </div>
-
-        </div>
+        <p>
+            Freshly prepared meals from all our partner restaurants.
+        </p>
 
     </section>
 
-    <script src="script.js"></script>
+    <!-- Menu -->
 
-</body>
-</html>
+    <section class="foods">
+
+        <div class="food-container">
+
+            <!-- Pizza Palace -->
+
+            <div class="food-box">
+
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600"
+                    alt="Margherita Pizza">
+
+                <span class="veg">🟢 Veg</span>
+
+                <h3>Margherita Pizza</h3>
+
+                <h4>Pizza Palace</h4>
+
+                <p>
+                    Classic cheese pizza with fresh mozzarella,
+                    basil and tomato sauce.
+                </p>
+
+                <p>⭐ 4.8</p>
+
+                <h3>₹299</h3>
+
+                <button onclick="addToCart('Margherita Pizza',299)">
+                    Add To Cart
+                </button>
+
+            </div>
+
+            <div class="food-box">
+
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600"
+                    alt="Farmhouse Pizza">
+
+                <span class="veg">🟢 Veg</span>
+
+                <h3>Farmhouse Pizza</h3>
+
+                <h4>Pizza Palace</h4>
+
+                <p>
+                    Loaded with onion, capsicum,
+                    tomato and extra cheese.
+                </p>
+
+                <p>⭐ 4.9</p>
+
+                <h3>₹349</h3>
+
+                <button onclick="addToCart('Farmhouse Pizza',349)">
+                    Add To Cart
+                </button>
+
+            </div>
+
+            <!-- Burger Hub -->
+
+            <div class="food-box">
+
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600"
+                    alt="Veg Burger">
+
+                <span class="veg">🟢 Veg</span>
+
+                <h3>Veg Burger</h3>
+
+                <h4>Burger Hub</h4>
+
+                <p>
+                    Crispy vegetable patty with
+                    lettuce, tomato and cheese.
+                </p>
+
+                <p>⭐ 4.7</p>
+
+                <h3>₹149</h3>
+
+                <button onclick="addToCart('Veg Burger',149)">
+                    Add To Cart
+                </button>
+
+            </div>
+
+            <div class="food-box">
+
+                <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=600"
+                    alt="Cheese Burger">
+
+                <span class="nonveg">🔴 Non-Veg</span>
+
+                <h3>Cheese Burger</h3>
+
+                <h4>Burger Hub</h4>
+
+                <p>
+                    Juicy grilled burger with
+                    cheddar cheese and fresh vegetables.
+                </p>
+
+                <p>⭐ 4.8</p>
+
+                <h3>₹199</h3>
+
+                <button onclick="addToCart('Cheese Burger',199)">
+                    Add To Cart
+                </button>
+                
+            </div>
+
+            <!-- Spice India -->
+
+<div class="food-box">
+
+<img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=600&auto=format&fit=crop&q=80"
+     alt="Chicken Biryani">
+    <span class="nonveg">🔴 Non-Veg</span>
+
+    <h3>Chicken Biryani</h3>
+
+    <h4>Spice India</h4>
+
+    <p>Aromatic basmati rice cooked with spicy chicken and traditional herbs.</p>
+
+    <p>⭐ 4.9</p>
+
+    <h3>₹249</h3>
+
+    <button onclick="addToCart('Chicken Biryani',249)">
+        Add To Cart
+    </button>
+
+</div>
+
+<div class="food-box">
+
+    <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=600" alt="Paneer Butter Masala">
+
+    <span class="veg">🟢 Veg</span>
+
+    <h3>Paneer Butter Masala</h3>
+
+    <h4>Spice India</h4>
+
+    <p>Soft paneer cubes cooked in rich creamy tomato gravy.</p>
+
+    <p>⭐ 4.8</p>
+
+    <h3>₹279</h3>
+
+    <button onclick="addToCart('Paneer Butter Masala',279)">
+        Add To Cart
+    </button>
+
+</div>
