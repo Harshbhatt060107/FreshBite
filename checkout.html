@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | FreshBite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1>FreshBite</h1>
+
+        <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="restaurants.html">Restaurants</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="cart.html">Cart</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Checkout</h2>
+    <p>Complete your order details below.</p>
+</section>
+
+<section class="foods">
+
+    <div class="food-box" style="max-width:500px; margin:auto; padding:30px;">
+
+        <h2>Delivery Details</h2>
+
+        <form id="checkoutForm">
+
+            <input type="text" placeholder="Full Name" required><br><br>
+
+            <input type="tel" placeholder="Phone Number" required><br><br>
+
+            <textarea placeholder="Delivery Address" rows="4" required></textarea><br><br>
+
+            <select required>
+                <option value="">Select Payment Method</option>
+                <option>Cash on Delivery</option>
+                <option>UPI</option>
+                <option>Credit/Debit Card</option>
+            </select><br><br>
+
+            <button type="submit" class="btn">
+                Place Order
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 FreshBite. All Rights Reserved.</p>
+</footer>
+
+<script>
+document.getElementById("checkoutForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    alert("🎉 Order Placed Successfully!");
+
+    localStorage.removeItem("cart");
+
+    window.location.href="index.html";
+
+});
+</script>
+
+</body>
+</html>

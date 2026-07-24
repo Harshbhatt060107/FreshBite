@@ -118,3 +118,8 @@ if (loginForm) {
     });
 
 }
+
+function clearCart() {
+    localStorage.removeItem("cart");
+    displayCart();
+}

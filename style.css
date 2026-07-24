@@ -484,3 +484,54 @@ html{
     font-size: 20px;
     color: white;
 }
+
+#cart-items + br + .btn{
+    margin-right: 10px;
+}
+
+.foods{
+    text-align: center;
+}
+
+.btn{
+    margin: 10px 5px;
+}
+
+/* Cart page buttons */
+.foods .btn{
+    display: inline-block;
+    width: 180px;
+    padding: 10px 18px;
+    margin: 10px 8px;
+    font-size: 16px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Small quantity buttons */
+.food-box button {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+input,
+textarea,
+select{
+    width:100%;
+    padding:12px;
+    margin:8px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+    box-sizing:border-box;
+}
+
+textarea{
+    resize:none;
+}
