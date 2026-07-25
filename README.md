@@ -65,8 +65,6 @@ FreshBite/
 
 ├── script.js
 
-├── images/
-
 └── README.md
 
 ---
