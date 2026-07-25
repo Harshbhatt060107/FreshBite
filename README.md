@@ -83,9 +83,13 @@ https://github.com/Harshbhatt060107/FreshBite
 
 ---
 
+## 🎥 Demo Video
+
+https://youtu.be/qsDfccnJF88
+
+---
 ## 📷 Screenshots
 
-Add screenshots of:
 - Home
 ![Home section](<FreshBite - Online Food Ordering - Google Chrome 25-07-2026 16_25_22.png>)
 ![Popular dishes section](<FreshBite - Online Food Ordering - Google Chrome 25-07-2026 16_25_30.png>)
