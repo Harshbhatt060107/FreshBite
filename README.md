@@ -1,7 +1,8 @@
-# 🍔 FreshBite - Online Food Ordering Website
+# 👕 StyleHub - Fashion & Apparel E-Commerce Website
 
 ## 📌 Project Overview
-FreshBite is a responsive online food ordering website developed using HTML, CSS, and JavaScript. Users can browse restaurants, view menus, add food items to the cart, adjust quantities, place orders, and track their order status.
+
+StyleHub is a responsive Fashion and Apparel E-Commerce website developed using HTML, CSS, and JavaScript. Users can browse premium fashion products, search and filter collections, view product details, add products to the shopping cart, enjoy seasonal discounts, complete the checkout process, and manage a demo user account.
 
 This project was developed as part of the Data Alcott Systems Web Development Internship.
 
@@ -10,18 +11,20 @@ This project was developed as part of the Data Alcott Systems Web Development In
 ## 🚀 Features
 
 - Responsive Home Page
-- Restaurants Page
-- Food Menu
+- Premium Product Collection
+- Product Details Page
+- Search Products
+- Category Filter
 - Shopping Cart
-- Increase/Decrease Item Quantity
-- Remove Items from Cart
+- Seasonal Discount System
 - Checkout Page
-- Order Tracking
+- Demo Login System
+- My Account Dashboard
 - About Us Page
-- Contact Page
-- Login Page
-- My Account Page
+- Contact Us Page
+- Newsletter Subscription
 - Mobile Friendly Design
+- Responsive Hamburger Menu
 - Cross-Browser Tested
 
 ---
@@ -39,27 +42,29 @@ This project was developed as part of the Data Alcott Systems Web Development In
 
 ## 📁 Project Structure
 
-FreshBite/
+StyleHub/
+
+├── images/
+
+├── screenshots/
 
 ├── index.html
 
-├── restaurants.html
+├── products.html
 
-├── menu.html
+├── product.html
 
 ├── cart.html
 
 ├── checkout.html
 
-├── tracking.html
+├── login.html
+
+├── account.html
 
 ├── about.html
 
 ├── contact.html
-
-├── login.html
-
-├── account.html
 
 ├── style.css
 
@@ -71,65 +76,62 @@ FreshBite/
 
 ## 🌐 Live Website
 
-https://harshbhatt060107.github.io/FreshBite/
+https://YOUR_USERNAME.github.io/StyleHub/
 
 ---
 
 ## 📂 GitHub Repository
 
-https://github.com/Harshbhatt060107/FreshBite
+https://github.com/YOUR_USERNAME/StyleHub
 
 ---
 
 ## 🎥 Demo Video
 
-https://youtu.be/qsDfccnJF88
+https://youtu.be/YOUR_VIDEO_LINK
 
 ---
+
 ## 📷 Screenshots
 
-- Home
-![Home section](<FreshBite - Online Food Ordering - Google Chrome 25-07-2026 16_25_22.png>)
-![Popular dishes section](<FreshBite - Online Food Ordering - Google Chrome 25-07-2026 16_25_30.png>)
-![Top restaurants section](<FreshBite - Online Food Ordering - Google Chrome 25-07-2026 16_25_38.png>)
-![Special offers and Home footer section](<FreshBite - Online Food Ordering - Google Chrome 25-07-2026 16_25_45.png>)
+Store all screenshots inside the **screenshots/** folder.
 
-- Restaurants
-![Restaurants section](<Restaurants _ FreshBite - Google Chrome 25-07-2026 16_31_37.png>)
-![All restaurants section](<Restaurants _ FreshBite - Google Chrome 25-07-2026 16_31_46.png>)
+### Home
+- Hero Section
+- Shop by Category
+- Featured Products
+- Seasonal Offers
 
-- Menu
-![Menu section](<FreshBite Menu - Google Chrome 25-07-2026 16_35_19.png>)
-![Menu section top](<FreshBite Menu - Google Chrome 25-07-2026 16_36_10.png>)
-![Menu section bottom](<FreshBite Menu - Google Chrome 25-07-2026 16_36_14.png>)
+### Products
+- Product Collection
+- Search & Filter
 
-- Cart
-![Cart section](<Cart - Google Chrome 25-07-2026 16_38_00.png>)
+### Product Details
+- Product Information
+- Add to Cart
 
-- Checkout
-![Checkout section](<Checkout _ FreshBite - Google Chrome 25-07-2026 16_38_34.png>)
-![Delivery details section](<Checkout _ FreshBite - Google Chrome 25-07-2026 16_38_39.png>)
+### Cart
+- Shopping Cart
+- Order Summary
 
-- Tracking
-![Tracking section](<Track Order _ FreshBite - Google Chrome 25-07-2026 16_41_50.png>)
-![Order details section](<Track Order _ FreshBite - Google Chrome 25-07-2026 16_41_57.png>)
+### Checkout
+- Billing Details
+- Payment Method
 
-- About
-![About section top](<About - FreshBite - Google Chrome 25-07-2026 16_42_56.png>)
-![About section bottom](<About - FreshBite - Google Chrome 25-07-2026 16_43_02.png>)
+### Login
+- Login Page
 
-- Contact
-![Contact section](<Contact _ FreshBite - Google Chrome 25-07-2026 16_56_39.png>)
-![Contact information section](<Contact _ FreshBite - Google Chrome 25-07-2026 16_56_47.png>)
-![Send message section](<Contact _ FreshBite - Google Chrome 25-07-2026 16_56_55.png>)
+### My Account
+- Profile
+- Orders
+- Wishlist
 
-- Login
-![Login section](<FreshBite Login - Google Chrome 25-07-2026 16_59_51.png>)
+### About
+- About StyleHub
 
-- Account
-![My account top](<My Account - FreshBite - Google Chrome 25-07-2026 17_00_40.png>)
-![My account bottom](<My Account - FreshBite - Google Chrome 25-07-2026 17_00_47.png>)
-
+### Contact
+- Contact Information
+- Contact Form
 
 ---
 
